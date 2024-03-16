@@ -1,0 +1,59 @@
+<div class="container-fluid">
+  <h2>All Players</h2>
+  <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let player of players">
+          <div class="card mb-3">
+              <div class="card-header bg-dark text-white">
+                  <h5 class="card-title mb-0">Player Info</h5>
+              </div>
+              <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                          <i class="fas fa-user"></i> Legal Full Name: {{ player.leagalefullname }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fas fa-gamepad"></i> In-Game Name: {{ player.inGameName }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fab fa-discord"></i> Discord ID: {{ player.discordId }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fas fa-tshirt"></i> Jersey Size: {{ player.jerseySize }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fas fa-envelope"></i> Mail Address: {{ player.mailAdress }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fas fa-wallet"></i> Salary: {{ player.salary }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fas fa-link"></i> Social Media Links: {{ player.socialMediaLinks }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fab fa-whatsapp"></i> WhatsApp Phone: {{ player.whatsappPhone }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fas fa-globe"></i> Country of Residence: {{ player.countryOfResidence }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fas fa-birthday-cake"></i> Date of Birth: {{ player.dateOfBirth | date }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fas fa-calendar-alt"></i> Contract Start Date: {{ player.contratStart | date }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fas fa-calendar-check"></i> Contract End Date: {{ player.contratEnd | date }}
+                      </li>
+                      <li class="list-group-item">
+                          <i class="fas fa-users"></i> Team Name: {{ player.teamName }}
+                      </li>
+                  </ul>
+              </div>
+              <div class="card-footer bg-dark">
+                  <button class="btn btn-primary btn-update" (click)="updatePlayer(player)">Update</button>
+                  <button class="btn btn-danger btn-delete" (click)="deletePlayer(player.idPlayer)">Delete</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

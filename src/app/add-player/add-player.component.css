@@ -1,0 +1,54 @@
+/* Gaming Theme Custom CSS */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body, :host {
+    display: block;
+    min-height: 100vh; /* Use min-height */
+    background-image: url('https://w.forfun.com/fetch/d4/d48cd45c39f04e468129543ffa92487a.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #00ffea; /* Neon color for headings */
+    text-align: center;
+}
+
+.form-label {
+    color: #ffffff;
+}
+
+.form-control {
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+}
+
+.form-control:focus {
+    background-color: #222222;
+    box-shadow: 0 0 8px 0 #00ffea; /* Neon glow on focus */
+}
+
+.btn-primary {
+    background-color: #ff0055;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff3377;
+}
+
+/* Example for custom icons before input fields */
+.form-control[type="text"]:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f11b'; /* Example: gamepad icon */
+    margin-right: 10px;
+}

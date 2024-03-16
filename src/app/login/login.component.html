@@ -1,0 +1,37 @@
+<div class="login-container">
+  <div class="image-container">
+    <img src="https://garksport.com/brand/Logo-Vibrant-Green.png" alt="Modernize" class="logo"/>
+  </div>
+  <div class="form-container">
+    <h2>Welcome to Modernize</h2>
+    <p>Your admin dashboard</p>
+    <div class="social-buttons-container">
+      <button class="social-button google">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-1772223-1507807.png" alt="Google" class="social-icon"/> Sign in with Google
+      </button>
+      <button class="social-button facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/512px-2021_Facebook_icon.svg.png" alt="Facebook" class="social-icon"/> Sign in with Facebook
+      </button>
+    </div>
+    <div class="divider">or sign in with</div>
+    <form (submit)="onLoggedin()">
+      <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Username" required [(ngModel)]="user.username">
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="Password" required [(ngModel)]="user.password">
+      </div>
+      <div class="form-footer">
+        <div class="checkbox">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember this device</label>
+        </div>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit" class="submit-button">Sign In</button>
+    </form>
+    <div class="signup-prompt">
+      <span>New to Modernize?</span> <a routerLink="/signup">Create an account</a>
+    </div>
+  </div>
+</div>

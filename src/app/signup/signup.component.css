@@ -1,0 +1,118 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.image-container {
+  background-color: #F2F6FA;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 50%;
+  height: auto;
+}
+
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 2rem;
+  max-width: 460px;
+}
+
+.social-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #EAEFF4;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.divider {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: calc(100% - 1rem); /* Subtracting padding */
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #EAEFF4;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: 0.5rem;
+}
+
+.submit-button {
+  width: calc(100% - 1rem); /* Make button full width of the form, accounting for padding */
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #5D87FF;
+  color: white;
+  font-size: 1rem; /* Increase font size if needed */
+}
+
+.signup-prompt {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .image-container, .form-container {
+    width: 100%;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
+}

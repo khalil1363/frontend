@@ -1,0 +1,41 @@
+
+body, :host {
+  display: block;
+  min-height: 100vh; 
+  background-image: url('https://w.forfun.com/fetch/d4/d48cd45c39f04e468129543ffa92487a.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+  .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .form-group label {
+    color: #ffd700;
+  }
+
+  .form-control {
+    background-color: #292b2c;
+    color: #ffd700;
+    border: 2px solid #17a2b8;
+  }
+
+  .form-control:focus {
+    background-color: #292b2c;
+    color: #ffd700;
+    border: 2px solid #ffc107;
+  }
+
+  .btn {
+    background-color: #ff4500;
+    border-color: #ff4500;
+  }
+
+  .btn:hover {
+    background-color: #da190b;
+    border-color: #da190b;
+  }
